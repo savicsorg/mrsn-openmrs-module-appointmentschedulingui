@@ -81,7 +81,7 @@ ${ ui.includeFragment("appointmentschedulingui", "timeZoneWarning") }
                    <input type="text" ng-model="appointmentType" typeahead="appointmentType as appointmentType.display for appointmentType in getAppointmentTypes(\$viewValue) | limitTo:8" >
                </div>
 
-               <div id="viewAllAppointmentTypes" class="inlineBox">
+               <div id="viewAllAppointmentTypes" class="">
                     <a ng-click="showAllAppointmentTypesModal = true">${ ui.message("appointmentschedulingui.scheduleAppointment.viewAllTypes") }</a>
                </div>
 
