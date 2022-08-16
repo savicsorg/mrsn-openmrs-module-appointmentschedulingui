@@ -93,8 +93,10 @@ ${ ui.includeFragment("appointmentschedulingui", "timeZoneWarning") }
                </daterangepicker>
 
                 <% if (canOverbook) { %>
-                   <div id="selectIncludeSlotsThatRequireOverbook" class="inlineBox">
-                       ${ ui.message("appointmentschedulingui.scheduleAppointment.showFullTimeSlots") } <input type="checkbox" ng-model="includeSlotsThatRequireOverbook"/>
+                   <div id="selectIncludeSlotsThatRequireOverbook" class="">
+                      <p class="align-center"> 
+                      ${ ui.message("appointmentschedulingui.scheduleAppointment.showFullTimeSlots") } <input type="checkbox" ng-model="includeSlotsThatRequireOverbook"/>
+                      </p>
                    </div>
                 <% } %>
            </div>
